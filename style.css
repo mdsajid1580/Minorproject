@@ -1,0 +1,42 @@
+
+* {
+  box-sizing: border-box;
+}
+nav {
+  background-color: black;
+  color:white;
+  font-size: 18px;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;  
+}
+img{
+  
+  height: 200px;
+}
+li{margin:20px;}
+
+.del {
+  width:30px;
+  padding: 0px;
+  margin-top: -250px;
+  margin-left: 200px;
+  transition: transform .5s;
+}
+.del:hover {
+  transform: scale(1.5);
+}

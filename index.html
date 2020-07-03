@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="script.js" type="text/javascript"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script>
+	function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        h5 = li[i].getElementsByTagName("h5")[0];
+        txtValue = h5.textContent || h5.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+</script>
+</head>
+<body>
+<nav class="nav">
+  <a class="nav-link active" href="#">Layout 1</a>
+  <a class="nav-link" href="#">About</a>
+  <a class="nav-link" href="#">Services</a>
+  <a class="nav-link" href="#">Contacts</a>
+</nav><br><br>
+<div class="container">
+	<h4>Below are all the project that have been created by me,You can search for your favourite!!!</h4>
+	<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Project.." title="Type in a name"><br><br>
+
+	<ul id="myUL" class="card-group">
+		<li id="sajid"><div class="card" style="width: 18rem;">
+				<img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Tic-Tac-Toe</h5>
+					<p class="card-text">This is my one of the best projects, that i have done in my free time as learning face</p>
+					<img class="del" src="https://image.flaticon.com/icons/svg/3096/3096687.svg" onclick="deleteit()">
+		    	</div>
+			</div>
+		</li>
+	  	<li id="asasd"><div class="card" style="width: 18rem;">
+				<img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Snake game</h5>
+					<p class="card-text">This is my one of the best projects, that i have done in my free time as learning face</p>
+					<img class="del" src="https://image.flaticon.com/icons/svg/3096/3096687.svg" onclick="deleteit()">
+		    	</div>
+			</div>
+		</li>
+		<li id="asdasf"><div class="card" style="width: 18rem;">
+				<img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Todo List</h5>
+					<p class="card-text">This is my one of the best projects, that i have done in my free time as learning face</p>
+					<img class="del" src="https://image.flaticon.com/icons/svg/3096/3096687.svg" onclick="deleteit()">
+		    	</div>
+			</div>
+		</li>
+		<li id="asdasfasf"><div id="one" class="card" style="width: 18rem;">
+				<img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Brick Game</h5>
+					<p class="card-text">This is my one of the best projects, that i have done in my free time as learning face</p>
+					<img class="del" src="https://image.flaticon.com/icons/svg/3096/3096687.svg" onclick="deleteit(one)">
+		    	</div>
+			</div>
+		</li>
+		<li id="asasf"><div class="card" style="width: 18rem;">
+				<img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">React Website</h5>
+					<p class="card-text">This is my one of the best projects, that i have done in my free time as learning face</p>
+					<img class="del" src="https://image.flaticon.com/icons/svg/3096/3096687.svg" onclick="deleteit()">
+		    	</div>
+			</div>
+		</li>
+		<li id="dgdfjgjlyi"><div class="card" style="width: 18rem;">
+				<img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Node Server</h5>
+					<p class="card-text">This is my one of the best projects, that i have done in my free time as learning face</p>
+					<img class="del" id="icn" src="https://image.flaticon.com/icons/svg/3096/3096687.svg">
+		    	</div>
+			</div>
+		</li>
+		<li id="rrhtjdfadg"><div class="card" style="width: 18rem;">
+				<img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Portfolio</h5>
+					<p class="card-text">This is my one of the best projects, that i have done in my free time as learning face</p>
+					<img class="del" src="https://image.flaticon.com/icons/svg/3096/3096687.svg" onclick="deleteit()">
+		    	</div>
+			</div>
+		</li>
+		<li id="sdfgsshdf"><div class="card" style="width: 18rem;">
+				<img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Minesweeper</h5>
+					<p class="card-text">This is my one of the best projects, that i have done in my free time as learning face</p>
+					<img class="del" src="https://image.flaticon.com/icons/svg/3096/3096687.svg" onclick="deleteit()">
+		    	</div>
+			</div>
+		</li>
+		<li id="assgadbadg"><div class="card" style="width: 18rem;">
+				<img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/project-planning-header@2x.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Easy Notes</h5>
+					<p class="card-text">This is my one of the best projects, that i have done in my free time as learning face</p>
+					<img class="del" src="https://image.flaticon.com/icons/svg/3096/3096687.svg" onclick="deleteit()">
+		    	</div>
+			</div>
+		</li>
+
+	  
+	</ul>
+</div>
+<script>
+$(document).ready(function() {
+    $('#myUL li ').click(function() {
+        var ID = $(this).attr('id');
+           $("#"+ID).remove();
+    });
+   });
+   
+</script>
+
+</body>
+</html> 
+
+
+
